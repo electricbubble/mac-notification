@@ -1,4 +1,4 @@
-# Golang-WDA
+# Notifier
 [![go doc](https://godoc.org/github.com/electricbubble/notifier?status.svg)](https://pkg.go.dev/github.com/electricbubble/notifier?tab=doc#pkg-index)
 [![go report](https://goreportcard.com/badge/github.com/electricbubble/notifier)](https://goreportcard.com/report/github.com/electricbubble/notifier)
 [![license](https://img.shields.io/github/license/electricbubble/notifier)](https://github.com/electricbubble/notifier/blob/master/LICENSE)
