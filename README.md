@@ -1,7 +1,7 @@
-# Notifier
-[![go doc](https://godoc.org/github.com/electricbubble/notifier?status.svg)](https://pkg.go.dev/github.com/electricbubble/notifier?tab=doc#pkg-index)
-[![go report](https://goreportcard.com/badge/github.com/electricbubble/notifier)](https://goreportcard.com/report/github.com/electricbubble/notifier)
-[![license](https://img.shields.io/github/license/electricbubble/notifier)](https://github.com/electricbubble/notifier/blob/master/LICENSE)
+# macOS Notification
+[![go doc](https://godoc.org/github.com/electricbubble/mac-notification?status.svg)](https://pkg.go.dev/github.com/electricbubble/mac-notification?tab=doc#pkg-index)
+[![go report](https://goreportcard.com/badge/github.com/electricbubble/mac-notification)](https://goreportcard.com/report/github.com/electricbubble/mac-notification)
+[![license](https://img.shields.io/github/license/electricbubble/mac-notification)](https://github.com/electricbubble/mac-notification/blob/master/LICENSE)
 
 Display a notification (macOS)
 
@@ -10,7 +10,7 @@ Display a notification (macOS)
 ## Installation
 
 ```shell script
-go get github.com/electricbubble/notifier
+go get github.com/electricbubble/mac-notification
 ```
 
 ## Usage
@@ -21,13 +21,15 @@ go get github.com/electricbubble/notifier
 package main
 
 import (
-	"github.com/electricbubble/notifier"
+	macNotification "github.com/electricbubble/mac-notification"
 )
 
 func main() {
-	notifier := NewNotifier(WithText("Hi, there!"), WithSound("Submarine"))
+	notifier := macNotification.NewNotifier(macNotification.WithText("Hi, there!"), macNotification.WithSound("Submarine"))
 	notifier.Push()
-	notifier.Push(WithText("Hi again"))
+	notifier.Push(macNotification.WithText("Hi again"))
+	// notifier.Text = "hey"
+	// notifier.Push()
 }
 
 ```

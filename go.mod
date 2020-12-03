@@ -1,3 +1,3 @@
-module github.com/electricbubble/notifier
+module github.com/electricbubble/mac-notification
 
 go 1.15
